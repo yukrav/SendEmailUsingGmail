@@ -15,8 +15,8 @@ public class SendEmailTemplate {
 
 	 public static void main(String[] args) {
 
-	        final String username = "er.ravisingh01@gmail.com";
-	        final String password = "ravi143sna";
+	        final String username = "er.ravisingh01@gmail.com";   // from email
+	        final String password = "*******";                    // Password
 
 	        Properties prop = new Properties();
 			prop.put("mail.smtp.host", "smtp.gmail.com");
@@ -35,10 +35,10 @@ public class SendEmailTemplate {
 	        try {
 
 	            Message message = new MimeMessage(session);
-	            message.setFrom(new InternetAddress("er.ravisingh01@gmail.com"));
+	            message.setFrom(new InternetAddress("er.raviisinghh016@test.com"));  // from email
 	            message.setRecipients(
 	                    Message.RecipientType.TO,
-	                    InternetAddress.parse("ravi.yadav@jagrannewmedia.com, nik.ravisingh@gmail.com")
+	                    InternetAddress.parse("ravi@test.com, nik1.raviisinghh@test.com")  // to email , Note: you have to put both email same if you have to send email to one id only. //
 	            );
 	            message.setSubject("Testing Gmail SSL");
 	            message.setText("Dear Send Email Template,"
