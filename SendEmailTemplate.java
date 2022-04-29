@@ -15,7 +15,7 @@ public class SendEmailTemplate {
 
 	 public static void main(String[] args) {
 
-	        final String username = "er.ravisingh01@gmail.com";   // from email
+	        final String username = "er.raviisinghh016@gmail.com";   // from email
 	        final String password = "*******";                    // Password
 
 	        Properties prop = new Properties();
@@ -35,7 +35,7 @@ public class SendEmailTemplate {
 	        try {
 
 	            Message message = new MimeMessage(session);
-	            message.setFrom(new InternetAddress("er.raviisinghh016@test.com"));  // from email
+	            message.setFrom(new InternetAddress("er.raviisinghh016@gmail.com"));  // from email
 	            message.setRecipients(
 	                    Message.RecipientType.TO,
 	                    InternetAddress.parse("ravi@test.com, nik1.raviisinghh@test.com")  // to email , Note: you have to put both email same if you have to send email to one id only. //
